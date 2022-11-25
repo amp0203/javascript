@@ -25,7 +25,8 @@ let PI = 3.1415;
 let myFirstJob = "Coder";
 let myCurrentJob = "Teacher";
 
-let job1 = "programmer";
+const job1 = "programmer";
+job1 = 123
 let job2 = "teacher";
 
 console.log(myFirstJob);
@@ -55,6 +56,18 @@ console.log(typeof null);
 // let, const and var
 let age = 30;
 age = 31;
+
+function abc() {
+    // let num = 1
+    let age = 30
+    if(age === 30) {
+        num = 3
+
+        console.log('num inner', num)
+    }
+    console.log('num outer', num)
+}
+abc()
 
 const birthYear = 1991;
 // birthYear = 1990;
@@ -88,6 +101,7 @@ x++; // x = x + 1
 x--;
 x--;
 console.log(x);
+++i i++
 
 // Comparison operators
 console.log(ageJonas > ageSarah); // >, <, >=, <=
@@ -95,7 +109,7 @@ console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
 
-console.log(now - 1991 > now - 2018);
+console.log((now - 1991) > (now - 2018));
 
 // Operator Precedence
 const now = 2037;
@@ -224,7 +238,7 @@ console.log('22' + '10' + 3);
 console.log('1' / '2');
 
 let n = '1' + 1;
-n = n - 1;
+n = +n - 1;
 console.log(n); // 10
 */
 
@@ -274,10 +288,10 @@ console.log(typeof favorite);
 if (favorite === 23) { // 15 === 23 -> FALSE
   console.log('Cool! 23 is an awful number!')
 } 
-else if (favorite === 7) {
+else if (favorite === 7) { 
   console.log('7 is also a cool number')
 } 
-else if {
+else if (favorite === 10) {
   console.log('Number is not 23 or 7')
 }
 else if (favorite === 9) {
@@ -334,7 +348,7 @@ else {
 // }
 
 // The switch Statement
-
+/*
 const day = 'mon';
 
 switch (day) {
@@ -351,6 +365,7 @@ switch (day) {
         console.log('write codes');
     case 'fri':
         console.log('record');
+        break;
     case 'sat':
     case 'sun':
         console.log('off');
@@ -358,3 +373,47 @@ switch (day) {
     default:
         console.log('do nothing!');
 }
+
+if (day === 'monday') {
+  console.log('Plan course structure');
+  console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+  console.log('Prepare theory videos');
+} else {
+  console.log('Not a valid day!');
+}
+
+*/
+
+// Statements and Expressions
+/*
+3 + 5;
+200;
+true && false && !false;
+
+if (23 > 10) {
+    const str = '23 is bigger';
+}
+
+const me = 'hehe';
+console.log(`I'm ${2022 - 2000} years old ${me}`);
+*/
+
+// The Conditional (Ternary) Operator
+/* 
+const age = 22;
+// age >= 18 ? console.log('drink wine') : console.log('drink water');
+
+// const drink = age >= 18 ? 'wine' : 'water';
+// console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = 'wine';
+} else {
+  drink2 = 'water';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+*/
