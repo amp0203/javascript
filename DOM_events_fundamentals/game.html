@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.cdnfonts.com/css/press-start-2p"
+            rel="stylesheet"
+        />
+
+        <title>guess my number</title>
+    </head>
+
+    <body>
+        <div class="layout">
+            <header class="wrapper header-wrapper">
+                <div class="first">
+                    <div class="first-1">
+                        <button class="reload">Again</button>
+                    </div>
+                    <div class="first-2">
+                        <div class="number-sequence">(Between 1 and 20)</div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="h1-name">Guess My Number</h1>
+                </div>
+                <div class="parent-mark">
+                    <div class="question-mark">?</div>
+                </div>
+            </header>
+            <main class="wrapper main-wrapper">
+                <div class="left-side">
+                    <input type="number" class="input-number" />
+                    <button class="check">Check</button>
+                </div>
+                <div class="right-side">
+                    <p class="process">Start guessing...</p>
+                    <p class="score">
+                        💯 Score:
+                        <span class="current-score">20</span>
+                    </p>
+                    <p class="highscore">
+                        🥇 Highscore: <span class="highscore">0</span>
+                    </p>
+                </div>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
