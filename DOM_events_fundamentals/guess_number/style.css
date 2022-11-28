@@ -56,11 +56,12 @@ body {
 
 .h1-name {
     text-align: center;
+    font-size: 40px;
 }
 
 .parent-mark {
     position: absolute;
-    bottom: -50px;
+    bottom: -80px;
     /* left: 50%; */
     width: 100%;
     background: transparent;
@@ -71,14 +72,14 @@ body {
 
 .question-mark {
     /* position: absolute; */
-    font-size: 50px;
+    font-size: 60px;
     padding: 50px 30px;
     /* bottom: -50px;
     left: 50%; */
     text-align: center;
     background: #eee;
     color: #333;
-    width: 150px;
+    width: 160px;
 }
 
 main.main-wrapper {
