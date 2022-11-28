@@ -16,27 +16,46 @@
 /*const x = function () {
     console.log(23);
 };*/
+// Math.random()
+// var __num__ = Math.trunc(Math.random() * 20) + 1;
+
+function abc() {
+    // displayMessage('abc');
+    displayMessage2('abc');
+}
+
+function displayMessage2(message) {
+    document.querySelector('.process').textContent = message;
+}
+
+// hoisting javascript
+// jquery // 8-10h
 
 let secretnumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
 
 const displayMessage = function (message) {
-    document.querySelector('.process').textContent = process;
+    document.querySelector('.process').textContent = message;
 };
+abc();
 
 document.querySelector('.check').addEventListener('click', function () {
+    console.log('clicked');
     const guess = Number(document.querySelector('.input-number').value);
     console.log(guess);
     // document.querySelector('.process').textContent = 'Correct Number!';
 
     //no number
     if (!guess) {
-        document.querySelector('.process').textContent = 'No number! 🤷‍♀️';
+        // document.querySelector('.process').textContent = 'No number! 🤷‍♀️';
+        displayMessage('No number! 🤷‍♀️');
 
         //correct number
     } else if (guess === secretnumber) {
-        document.querySelector('.process').textContent = '🤩 Correct Number!';
+        // document.querySelector('.process').textContent = '🤩 Correct Number!';
+        displayMessage('🤩 Correct Number!');
+
         document.querySelector('.question-mark').textContent = secretnumber;
 
         document.querySelector('body').style.backgroundColor = '#60b347';
@@ -52,6 +71,7 @@ document.querySelector('.check').addEventListener('click', function () {
             document.querySelector('.process').textContent =
                 guess > secretnumber ? '😒 Too high!' : '😢Too low!';
             score--;
+
             document.querySelector('.current-score').textContent = score;
         } else {
             document.querySelector('.process').textContent =
