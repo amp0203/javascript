@@ -51,7 +51,7 @@ console.log(lastPost2);
 */
 
 //The Moule Pattern
-
+/*
 const ShoppingCart2 = (function () {
     const cart = [];
     const shippingCost = 10;
@@ -82,3 +82,17 @@ ShoppingCart2.addtToCart('apples', 4);
 ShoppingCart2.addtToCart('pizza', 2);
 console.log(ShoppingCart2);
 console.log(ShoppingCart2.shippingCost);
+*/
+
+// CommonJs Module
+
+// Export
+export.addtToCart = function (prodcut, quantity) {
+    cart.push((prodcut, quantity));
+    console.log(
+        `${quantity} ${prodcut} added to cart (shipping cost is ${shippingCost})`
+    );
+};
+
+// Import
+const { addtToCart } = require('./shoppingCart,js');
