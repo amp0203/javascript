@@ -1,0 +1,23 @@
+{
+    "name": "javascript",
+    "version": "1.0.0",
+    "description": "",
+    "main": "js_02_part1.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/amp0203/javascript.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/amp0203/javascript/issues"
+    },
+    "homepage": "https://github.com/amp0203/javascript#readme",
+    "dependencies": {
+        "leaflet": "^1.9.3",
+        "lodash": "^4.17.21"
+    }
+}
