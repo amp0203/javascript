@@ -19,6 +19,7 @@
     },
     "homepage": "https://github.com/amp0203/javascript#readme",
     "dependencies": {
+        "core-js": "^3.27.1",
         "leaflet": "^1.9.3",
         "lodash": "^4.17.21",
         "lodash-es": "^4.17.21"
