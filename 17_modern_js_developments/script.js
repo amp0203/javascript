@@ -100,7 +100,9 @@ const { addtToCart } = require('./shoppingCart,js');
 
 // Introduction to NPM
 
-import cloneDeep from './node_modules/lodash/cloneDeep.js';
+// import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+import cloneDeep from 'lodash-es';
+
 // import cloneDeep from 'lodash';
 
 const state = {
@@ -113,5 +115,8 @@ const state = {
 const stateClone = Object.assign({}, state);
 state.user.loggedIn = false;
 console.log(stateClone);
-
 console.log(stateDeepClone);
+
+if (module.hot) {
+    module.hot.accept();
+}
